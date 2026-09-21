@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-container-lowest: #060e20;
+  --color-surface-container-low: #131b2e;
+  --color-surface-container: #171f33;
+  --color-surface-container-high: #222a3d;
+  --color-surface-container-highest: #2d3449;
+  --color-surface-bright: #31394d;
+  --color-surface-dim: #0b1326;
+  --color-surface: #0b1326;
+  --color-background: #0b1326;
+  
+  --color-primary: #4edea3;
+  --color-primary-container: #10b981;
+  --color-primary-fixed: #6ffbbe;
+  --color-primary-fixed-dim: #4edea3;
+  --color-on-primary: #003824;
+  --color-on-primary-container: #00422b;
+  --color-on-primary-fixed: #002113;
+
+  --color-secondary: #62dcad;
+  --color-secondary-container: #18a479;
+  --color-tertiary: #7bd0ff;
+  --color-tertiary-container: #19aee8;
+  --color-surface-tint: #4edea3;
+
+  --color-on-surface: #dae2fd;
+  --color-on-surface-variant: #bbcabf;
+  --color-outline: #86948a;
+  --color-outline-variant: #3c4a42;
+
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-headline: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+  }
+}
+
+.eco-glow-btn {
+  box-shadow: 0 4px 0 #059669, 0 8px 20px -2px rgba(16, 185, 129, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
+}
+.eco-glow-btn:hover {
+  box-shadow: 0 4px 0 #059669, 0 10px 25px -2px rgba(16, 185, 129, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+.eco-glow-btn:active {
+  box-shadow: 0 1px 0 #059669, 0 4px 10px -2px rgba(16, 185, 129, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transform: translateY(1px);
+}
+
+.eco-dark-btn {
+  box-shadow: 0 4px 0 #0b1326, 0 6px 16px -2px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(78, 222, 163, 0.25);
+  transform: translateY(-1px);
+}
+.eco-dark-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 0 #0b1326, 0 8px 18px -2px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(78, 222, 163, 0.4);
+}
+.eco-dark-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 #0b1326, 0 3px 8px -2px rgba(0, 0, 0, 0.5);
+}
+
+.eco-neutral-btn {
+  box-shadow: 0 4px 0 #0b1326, 0 6px 16px -2px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+.eco-neutral-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 0 #0b1326, 0 8px 18px -2px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.eco-neutral-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 #0b1326, 0 3px 8px -2px rgba(0, 0, 0, 0.5);
+}

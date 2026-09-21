@@ -1,0 +1,7 @@
+{
+  "name": "EcoDrop",
+  "description": "Decentralized waste recycling telemetry and tokenized impact dashboard.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
